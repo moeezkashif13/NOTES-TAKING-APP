@@ -1,0 +1,157 @@
+.features__box{
+    /* background-color: yellow; */
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 45px 40px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+
+.features__box:nth-child(n+4){
+/* background-color: red; */
+/* border-right: none; */
+border-bottom: none;
+}
+
+.features__box:nth-child(3n+3){
+    /* background-color: lightblue; */
+    border-right: none;
+}
+
+
+
+.features__imageContainer{
+    /* background-color: green; */
+    width: 50%;
+    position: relative;
+}
+
+
+.features__image{
+    width: 100%;
+    height: 100%;
+}
+
+
+.features__h4{
+    font-size: 3rem;
+}
+
+.features__UL{
+    list-style: none;
+    margin: 10px 0;
+}
+
+
+.features__LI{
+    font-size: 1.8rem;
+    color: var(--mainColor);
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+
+
+
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .features__box{
+    background-color: red;
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.features__imageContainer{
+    width: 70%;
+}
+
+.features__UL{
+    margin: 5px 0;
+}
+
+.features__LI{
+
+    font-size: 2.5rem !important;
+}
+
+}
+
+
+@media only screen and (min-width: 601px)and (max-width:900px) {
+
+    .features__box{
+    background-color: yellow;
+    width: 50%;
+    /* border: none; */
+    border-bottom: 1px solid gray;
+
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.features__box:nth-child(even){
+    /* background-color: red; */
+    border-right: none;
+}
+
+.features__box:nth-child(3){
+    border-right: 1px solid gray;
+
+}
+
+.features__box:nth-child(n+4){
+    /* background-color: red; */
+    /* border-right: none; */
+    /* border-bottom: inherit; */
+    border-bottom: 1px solid gray;
+
+    }
+    
+    .features__box:nth-child(3n+3){
+        /* background-color: lightblue; */
+        /* border-right: inherit; */
+    border-bottom: 1px solid gray;
+
+    }
+    
+
+
+
+
+.features__imageContainer{
+    width: 50%;
+}
+
+.features__UL{
+    margin: 5px 0;
+}
+
+.features__h4{
+    font-size: 2.5rem;
+}
+
+.features__LI{
+
+    font-size: 1.8rem !important;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */

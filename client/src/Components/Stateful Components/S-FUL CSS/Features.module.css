@@ -1,0 +1,38 @@
+:root {
+--mainColor : #37352f;
+  }
+
+
+.features{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+padding: 0 100px;
+justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+.features{
+
+  /* background-color: yellow; */
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.features{
+  width: 100%;
+  /* background-color: red; */
+  padding: 0 50px;
+}
+}
