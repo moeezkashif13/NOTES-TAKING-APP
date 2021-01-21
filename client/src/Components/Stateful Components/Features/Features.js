@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from '../S-FUL CSS/Features.module.css';
+import classes from '../S-FUL SCSS/Features.module.scss';
 import EachFeature from './EachFeature';
 
 class Features extends React.Component{

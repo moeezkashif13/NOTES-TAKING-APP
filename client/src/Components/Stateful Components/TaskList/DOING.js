@@ -1,6 +1,6 @@
 import React from 'react'
 import EachTaskFromThree from './EachTaskFromThree';
-import classes from '../S-FUL CSS/TaskList.module.css';
+import classes from '../S-FUL SCSS/TaskList.module.scss';
 import NewTask from './NewTASK';
 import { BsThreeDots,BsPlusCircle } from "react-icons/bs";
 

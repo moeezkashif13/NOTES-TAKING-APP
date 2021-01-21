@@ -1,18 +1,21 @@
 import React from 'react';
-import classes from '../S-FUL CSS/TaskList.module.css';
-const NewTask = ()=>{
+import classes from '../S-FUL SCSS/TaskList.module.scss';
 
-    const addNewTask = event=>{
 
-        
-        
+const NewTask = props=>{
 
-    }
+console.log(props);
+
     
 
     return(
-        <a onClick={addNewTask} href="#!" className={classes.features__NewTask}>+ New</a>
-    )
+
+
+
+        <a onClick={props.addNewTask} href="#!" className={classes.tasklist__featuresNewTask}>+ New</a>
+    
+    
+        )
 
 }
 

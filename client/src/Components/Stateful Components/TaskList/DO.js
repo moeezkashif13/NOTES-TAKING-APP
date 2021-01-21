@@ -1,6 +1,6 @@
 import React from 'react'
 import EachTaskFromThree from './EachTaskFromThree';
-import classes from '../S-FUL CSS/TaskList.module.css';
+import classes from '../S-FUL SCSS/TaskList.module.scss';
 import NewTask from './NewTASK';
 import { BsThreeDots,BsPlusCircle } from "react-icons/bs";
 
@@ -8,12 +8,31 @@ class DO extends React.Component{
 
     state = {
         quantity : 2,
+ 
+arra : [],
     }
    
+    addNewTask = ()=>{
+
+let arra = this.state.arra;
+let slice = arra.slice();
+
+slice.push(<EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>,);
+
+this.setState({arra:slice});
+
+
+
+    }
 
     render(){
 
+let gotIt = this.state.arra;
+let spiled = gotIt.slice();
 
+let mapped = spiled.map(elem=>{
+    return elem;
+})
 
 
     return(
@@ -42,7 +61,11 @@ class DO extends React.Component{
 
 <EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>
 
-<NewTask/>
+{/* // {this.state.truey?<EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>:null} */}
+{mapped}
+
+
+<NewTask addNewTask={this.addNewTask}/>
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from '../S-FUL CSS/EachFeature.module.css';
+import classes from '../S-FUL SCSS/EachFeature.module.scss';
 
 const allDetails = [
     {

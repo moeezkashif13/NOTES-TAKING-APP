@@ -4,13 +4,23 @@
     display: flex;
     /* height: 50vh; */
     /* height: 100%; */
+
+
+    &__sidebar{
+        background-color: yellow;
+        flex-basis: 12%;
+    
+    }
+
+
+
 }
 
-.tasklist__sidebar{
-    background-color: yellow;
-    flex-basis: 12%;
+// .tasklist__sidebar{
+//     background-color: yellow;
+//     flex-basis: 12%;
 
-}
+// }
 
 .tasklist__taskArea{
     /* background-color: tan; */
@@ -98,7 +108,9 @@ transition: all 0.4s ease-out;
 .tasklist__conditionsLINK{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-    /* background-color: yellow; */
+     background-color: lawngreen; 
+    //  z-index: 10;
+    
     width: 100%;
 
     display: block;
@@ -111,12 +123,39 @@ padding: 10px 0;
 padding-left: 10px;
 margin-bottom: 20px;
 
+position: relative;
 
+}
+
+.tasklist__eachTaskThreeDots{
+background-color: purple;
+z-index: 10;
+    padding: 5px 8px 0 8px;
+border-radius: 5px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+// font-size: 2.5rem;
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+-o-transition: all 0.4s ease-out;
+-ms-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+}
+
+.tasklist__eachTaskThreeDots:hover{
+background-color: rgba(0,0,0,0.8)
+}
+
+
+.ThreeDots{
+    background-color: yellow !important;
 }
 
 
 
-.features__NewTask{
+.tasklist__featuresNewTask{
     color: purple;
     text-decoration: none;
 
@@ -183,3 +222,59 @@ transition: all 0.4s ease-out;
 
     background-color: rgba(0,0,0,0.5);
 }
+
+
+
+
+
+
+.tasklist__dropdown{
+    // background-color: yellow;
+    // height: 20px;
+    // z-index: 10;
+    // padding: 0 30px;
+    // margin-left: auto;
+    // width: 30%;
+    position: absolute;
+    top:11px;
+    // padding: 0 150px 0 0px;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.397), 0 6px 6px rgba(0, 0, 0, 0.431);
+
+}
+
+// .tasklist__dropdown__LITAG{
+//     // background-color: red;
+    
+//     // display: flex;
+
+    
+    
+// }
+
+.tasklist__dropdown__LITAG a {
+    color: #000;
+    font-weight: 500;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 7px 140px 7px 0px;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    text-align: left;
+}
+
+.tasklist__dropdown__LITAG a:hover{
+    background-color: rgba(0, 0, 0, 0.397);
+    color: red;
+}
+
+a:hover{
+    text-decoration: none;
+  }

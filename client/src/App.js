@@ -1,3 +1,4 @@
+import './App.scss';
 import Auxx from './Components/Auxx/Auxx';
 import Navbar from './Components/Stateless Components/Navbar/Navbar';
 import HomePage from './Components/Stateful Components/HomePage/HomePage';

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import classesFROMCSS from '../CSS/Navbar.css';
-import classes from '../S-LESS CSS/Navbar.module.css';
+import classes from '../S-LESS SCSS/Navbar.module.scss';
 
 // import Button from 'react-bootstrap/Button';
 

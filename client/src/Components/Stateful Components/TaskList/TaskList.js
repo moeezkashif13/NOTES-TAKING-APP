@@ -1,10 +1,12 @@
 import React from 'react';
 
-import classes from '../S-FUL CSS/TaskList.module.css';
+import classes from '../S-FUL SCSS/TaskList.module.scss';
 import DO from './DO';
 import DOING from './DOING';
 import DONE from './DONE';
 import { BsClipboard,BsFillCaretDownFill } from "react-icons/bs";
+
+// import EachTaskThreeDots from './EachTaskThreeDots/EachTaskThreeDots';
 
 
 
@@ -99,6 +101,9 @@ class TaskList extends React.Component{
 
 
 <DONE/>
+
+
+{/* <EachTaskThreeDots/> */}
 
 </div>
 
