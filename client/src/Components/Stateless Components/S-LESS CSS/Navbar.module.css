@@ -1,0 +1,94 @@
+.navbar{
+    background-color: red;
+    width: 100%;
+    /* height: 20px; */
+    display: flex;
+    position: relative;
+    /* padding: 0 30px; */
+
+}
+
+.navbar__logoContainer{
+    background-color: green;
+    flex-basis: 15%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+
+.navbar__logoContainerATAG{
+background-color: red;
+display: flex;
+text-decoration: none;
+
+    
+}
+
+
+.navbar__img{
+    background-color: orange;
+    /* width: 80px; */
+    /* height: auto; */
+    width: 60px;
+    height: 60px;
+    background-image: url('https://i.ibb.co/gzVHXQq/710c9512be09db6832b6720931e13625-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center center;
+}
+
+.navbar__text{
+    align-self: center;
+    margin-left: -10px;
+    font-weight: 700;
+}
+
+.navbar__mainLists{
+    background-color: yellow;
+    /* height: 100%; */
+    flex-grow: 1;
+    /* display: flex; */
+}
+
+.navbar_UL{
+    background-color: rebeccapurple;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__listItem{
+    background-color: mediumaquamarine;
+    margin-right: 25px;
+    padding: 5px 0px;
+ 
+}
+
+
+.navbar__listItem:last-child{
+    /* margin-right: 50px; */
+}
+
+
+.navbar__links{
+    background-color: #fff;
+    color: #37352f;
+    text-decoration: none;
+    padding: 5px 15px;
+font-weight: 600;
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+-o-transition: all 0.4s ease-out;
+-ms-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+}
+
+.navbar__links:hover{
+    
+    background-color: rgba(55,53,47,0.08);
+    
+
+}
