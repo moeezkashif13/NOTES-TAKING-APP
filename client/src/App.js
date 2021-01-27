@@ -5,7 +5,7 @@ function App() {
   return (
     
     <Auxx>
-    <Navbar/>
+    {/* <Navbar/> */}
 
     <HomePage/>
     </Auxx>

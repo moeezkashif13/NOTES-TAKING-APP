@@ -1,0 +1,187 @@
+:root {
+    --primary-color:coral;
+    --color-input-text:#111;
+    --color-border:#fff5;
+    --bgcolor:#14213d;
+    --formbg:#0e1629;
+    --border-radius:4px;
+    --HTAGS : rgba(0, 0, 0, 0.6);
+  }
+
+.homepage{
+  padding: 40px 0;
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage__imageContainer{
+    /* background-color: red; */
+    
+position: relative;
+width: 40%;
+height: 100%;
+
+
+}
+
+
+.homepage__image{
+    width: 100%;
+    height: 100%;
+}
+
+.homepage__textsContainer{
+    /* background-color: pink; */
+    text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+width:100%;
+}
+
+.homepage__h1{
+    font-size: 7.5rem;
+    
+}
+
+
+.homepage__h2{
+    color: var(--HTAGS);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/*  */
+
+.homepage__loginform {
+    max-width: 380px;
+    width: 100%;
+    padding: 1rem;
+    background: #0e1629;
+    border-radius: calc(var(--border-radius) * 2);
+    display: flex;
+    align-items: center;
+  }
+  
+  .homepage__inputfloatinglabel {
+    position: relative;
+    /* margin-bottom: 24px; */
+    width: 100%;
+  }
+  .homepage__inputfloatinglabel .homepage__input {
+    font-family: inherit;
+    width: 100%;
+    display: block;
+    border: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    outline: 0;
+    font-size: 1.4rem;
+    color: #fff7;
+    padding: 10px 12px;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .homepage__inputfloatinglabel .homepage__input:required, .homepage__inputfloatinglabel .homepage__input:invalid {
+    box-shadow: none;
+  }
+  .homepage__inputfloatinglabel .homepage__input::placeholder {
+    color: red;
+  }
+  .homepage__inputfloatinglabel .homepage__input:placeholder-shown {
+    border-color: var(--color-border);
+  }
+  .homepage__inputfloatinglabel .homepage__input:placeholder-shown ~ label {
+    font-size: 1rem;
+    cursor: text;
+    transform: translatey(17px);
+    padding: 0px 0px;
+  }
+  .homepage__inputfloatinglabel label {
+    position: absolute;
+    left: 12px;
+    display: block;
+    transform: translatey(-7px);
+    transition: 0.3s;
+    font-size: 0.75rem;
+    padding: 0px 4px;
+    color: #fff6;
+    background: var(--formbg);
+    top: 0;
+  }
+  .homepage__inputfloatinglabel .homepage__input:focus {
+    border-width: 1px;
+    border-color: var(--primary-color);
+  }
+  .homepage__floatinglabel .homepage__input:focus ~ label {
+    position: absolute;
+    transform: translatey(-7px);
+    color: var(--primary-color);
+    padding: 0px 4px;
+    font-size: 0.75rem;
+  }
+  
+  .homepage__btnsubmit {
+    padding: 13px 20px;
+    margin-left: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #080D17;
+  }
+  
+  .homepage__btnsubmit:focus {
+    box-shadow: 0px 0px 4px var(--primary-color);
+  }
+  
+  .homepage__btnsubmit:active {
+    transform: scale(1.04) translatey(2px);
+  }
+
+
+/*  */
+
+
+.homepage__h4{
+  font-weight: 500;
+  color: var(--HTAGS);
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+
+
+
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
