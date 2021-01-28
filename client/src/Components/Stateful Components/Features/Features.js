@@ -10,7 +10,7 @@ class Features extends React.Component{
         
         <section className={classes.features}>
 
-<EachFeature/>
+<EachFeature image="" />
 
 {/* <div className={classes.features__box}>
 
