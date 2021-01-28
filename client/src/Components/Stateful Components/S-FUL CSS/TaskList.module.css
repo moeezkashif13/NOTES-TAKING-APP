@@ -1,0 +1,185 @@
+.tasklist{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    /* height: 50vh; */
+    /* height: 100%; */
+}
+
+.tasklist__sidebar{
+    background-color: yellow;
+    flex-basis: 12%;
+
+}
+
+.tasklist__taskArea{
+    /* background-color: tan; */
+    flex-grow: 1;
+    padding: 0 50px;
+}
+
+
+.tasklist__instructions{
+    /* background-color: green; */
+    padding: 50px 0;
+}
+
+
+.tasklist__heading{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.tasklist__PTAG{
+    font-size: 1.3rem;
+}
+
+
+.tasklist__navbar{
+    /* background-color: mediumorchid; */
+    list-style: none;
+    padding: 0px 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.tasklist__toTheRight{
+    display: flex;
+    margin-left: auto;
+}
+
+
+.tasklist__LITAG{
+    /* background-color: red; */
+    margin-right: 10px;
+    padding: 10px 0;
+    
+}
+
+.tasklist__linkTAG{
+    /* background-color: royalblue; */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #ccc;
+    -webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+-o-transition: all 0.4s ease-out;
+-ms-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+
+}
+
+.tasklist__linkTAG:hover{
+    background-color: rgba(0,0,0,0.5)
+}
+
+
+.tasklist__threeConditionsDIV{
+    /* background-color: red; */
+    width: 100%;
+ padding: 30px 0;
+    display: flex;
+}
+
+
+.tasklist__conditions{
+    /* background-color: brown; */
+    width: 25%;
+    margin: 0 10px;
+
+}
+
+
+.tasklist__conditionsLINK{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    /* background-color: yellow; */
+    width: 100%;
+
+    display: block;
+border-radius: 5px;
+font-size: 1.5rem;
+font-weight: 700;
+color: black;
+text-decoration: none;
+padding: 10px 0;
+padding-left: 10px;
+margin-bottom: 20px;
+
+
+}
+
+
+
+.features__NewTask{
+    color: purple;
+    text-decoration: none;
+
+    background-color: black;
+    width: 100%;
+
+    display: block;
+/* border-radius: 5px; */
+font-size: 1.2rem;
+font-weight: 700;
+padding: 8px 0;
+padding-left: 10px;
+margin-bottom: 10px;
+
+
+}
+
+
+.tasklist__allConditions{
+    display: flex;
+    font-size: 1.4rem;
+align-items: center;
+
+
+}
+
+
+
+.tasklist__twoSigns{
+    margin-left: auto;
+}
+
+.tasklist__task{
+    padding: 0px 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+-o-transition: all 0.4s ease-out;
+-ms-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+
+}
+
+.tasklist__task:hover{
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+.tasklist__twoSigns a{
+    font-size: 2rem;
+    text-decoration: none;
+    margin-right:5px;
+    padding: 0 5px;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+
+.tasklist__twoSigns a:hover{
+
+    background-color: rgba(0,0,0,0.5);
+}

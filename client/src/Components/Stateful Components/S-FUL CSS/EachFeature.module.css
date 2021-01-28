@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: blue;
+
 
     padding: 45px 40px;
     border-right: 1px solid gray;
