@@ -9,30 +9,30 @@ class DO extends React.Component{
     state = {
         quantity : 2,
  
-arra : [],
+// arra : [],
     }
    
-    addNewTask = ()=>{
+//     addNewTask = ()=>{
 
-let arra = this.state.arra;
-let slice = arra.slice();
+// let arra = this.state.arra;
+// let slice = arra.slice();
 
-slice.push(<EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>,);
+// slice.push(<EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>);
 
-this.setState({arra:slice});
+// this.setState({arra:slice});
 
 
 
-    }
+//     }
 
     render(){
 
-let gotIt = this.state.arra;
-let spiled = gotIt.slice();
+// let gotIt = this.state.arra;
+// let spiled = gotIt.slice();
 
-let mapped = spiled.map(elem=>{
-    return elem;
-})
+// let mapped = spiled.map(elem=>{
+//     return elem;
+// })
 
 
     return(
@@ -51,21 +51,9 @@ let mapped = spiled.map(elem=>{
 
     </div>
 
-{/* <a href="#!" className={`${classes.tasklist__DOLINK} ${classes.tasklist__conditionsLINK}`}>texttt</a> */}
-
- {/* <EachTaskFromThree category={classes.tasklist__DOLINK} text = "textpop"/> */}
 
 
- {/* <EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>*/}
-
-
-<EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>
-
-{/* // {this.state.truey?<EachTaskFromThree category={classes.tasklist__DOLINK} text = "text"/>:null} */}
-{mapped}
-
-
-<NewTask addNewTask={this.addNewTask}/>
+<NewTask class={classes.tasklist__DOLINK}/>
 
 
 

@@ -32,9 +32,10 @@ class DONE extends React.Component{
 
 {/* <a href="#!" className={`${classes.tasklist__DOLINK} ${classes.tasklist__conditionsLINK}`}>texttt</a> */}
 
-<EachTaskFromThree category={classes.tasklist__DONELINK} text = "text"/>
 
-<NewTask/>
+
+
+<NewTask class={classes.tasklist__DONELINK}/>
 
 
 </div>

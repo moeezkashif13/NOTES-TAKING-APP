@@ -16,7 +16,6 @@ class TaskList extends React.Component{
 
         console.log(event.target);
 
-        event.target.setAttribute('contenteditable','true');
         
 
     }

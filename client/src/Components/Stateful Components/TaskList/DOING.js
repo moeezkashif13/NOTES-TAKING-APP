@@ -1,5 +1,6 @@
 import React from 'react'
 import EachTaskFromThree from './EachTaskFromThree';
+import {connect} from 'react-redux';
 import classes from '../S-FUL SCSS/TaskList.module.scss';
 import NewTask from './NewTASK';
 import { BsThreeDots,BsPlusCircle } from "react-icons/bs";
@@ -11,6 +12,12 @@ class DOING extends React.Component{
     }
 
     render(){
+
+console.log('wwwww');
+
+        console.log(this.props);
+        
+
     return(
 <div className={`${classes.tasklist__DOING} ${classes.tasklist__conditions}`}>
 
@@ -27,14 +34,10 @@ class DOING extends React.Component{
 
     </div>
 
-{/* <a href="#!" className={`${classes.tasklist__DOLINK} ${classes.tasklist__conditionsLINK}`}>texttt</a> */}
-
-<EachTaskFromThree category={classes.tasklist__DOINGLINK} text = "text"/>
-
-<EachTaskFromThree category={classes.tasklist__DOINGLINK} text = "text"/>
 
 
-<NewTask/>
+
+<NewTask class={classes.tasklist__DOINGLINK}/>
 
 
 </div>
@@ -42,6 +45,20 @@ class DOING extends React.Component{
 }
 }
 
+const mapStateToProps = state=>{
+    return{
+ItemDeleted : state.ItemDeleted
+    }
+}
+
+const mapDispatchToProps = dispatch=>{
+    return{
+        // ItemDeleted : arr=>dispatch({type:'ItemDeleted',newArray:arr}),
+    }
+}
 
 
-export default DOING;
+
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(DOING);

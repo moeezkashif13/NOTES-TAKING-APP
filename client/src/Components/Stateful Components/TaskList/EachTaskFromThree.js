@@ -1,10 +1,10 @@
 import React from 'react';
 import {BsThreeDots} from 'react-icons/bs';
 import { AiFillDelete,AiFillCopy } from "react-icons/ai";
-
+import {connect} from 'react-redux';
 import classes from '../S-FUL SCSS/TaskList.module.scss';
 import Auxx from '../../Auxx/Auxx';
-import Dropdown from 'react-bootstrap/Dropdown';
+import $ from 'jquery';
  
 
 
@@ -15,12 +15,11 @@ class EachTaskFromThree extends React.Component{
     }
 
     mouseEntering = event=>{
-        console.log(event.target.firstElementChild);
+
         this.setState({renderDropdown:false})
         
         event.target.firstElementChild.style.display = 'block';
         
-
     }
     
     dropdownFromThreeDots = event=>{
@@ -39,12 +38,34 @@ class EachTaskFromThree extends React.Component{
 
 
     deleteTask = event=>{
-        console.log('wwww');
+    
+        console.log(event.target);
 
-        event.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+           
+       let id =  $(event.target).parents()[4]
         
 
+       console.log(id.id);
+       let deleting = this.props.allArray
+       console.log(deleting);
+       
+       
+       deleting.forEach((elem,index)=>{
+           
+           console.log(elem.props.id);
 
+           if(id.id == elem.props.id){
+              
+               let delIT = deleting.splice(index,1);
+               console.log(deleting);
+          this.props.ItemDeleted(delIT);
+          
+            }
+           
+       })
+       
+       
+        
         
     }
 
@@ -54,15 +75,14 @@ class EachTaskFromThree extends React.Component{
     return(
 
         <Auxx>
-<a href="#!" onMouseEnter={this.mouseEntering} onMouseLeave={this.leaving}  className={`${this.props.category} ${classes.tasklist__conditionsLINK}`}>{this.state.text}
+<a id={this.props.id} href="#!" onMouseEnter={this.mouseEntering} onMouseLeave={this.leaving}  className={`${this.props.category} ${classes.tasklist__conditionsLINK}`}>{this.state.text}
 
 <div style={{display:'none'}}  onClick={this.dropdownFromThreeDots} className={classes.tasklist__eachTaskThreeDots}>
     
     <BsThreeDots style={{fontSize:'2rem'}}></BsThreeDots>
-    <ul className={classes.tasklist__dropdown}>
 
         {this.state.renderDropdown?
-        <Auxx>
+    <ul className={classes.tasklist__dropdown}>
         <li className={classes.tasklist__dropdown__LITAG}>
     <a href="#!" onClick={this.deleteTask}>
         <i style={{backgroundColor:'transparent',marginRight:'3px'}}><AiFillDelete/> </i>
@@ -78,14 +98,12 @@ class EachTaskFromThree extends React.Component{
 </li>
 
 
-</Auxx>:null}
-        
-
 
 
 
 
     </ul>
+    :null}
 
 
 
@@ -103,4 +121,18 @@ class EachTaskFromThree extends React.Component{
 }
 }
 
-export default EachTaskFromThree;
+
+const mapStateToProps = state=>{
+    return{
+
+    }
+}
+
+const mapDispatchToProps = dispatch=>{
+    return{
+        ItemDeleted : arr=>dispatch({type:'ItemDeleted',newArray:arr}),
+    }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(EachTaskFromThree);
