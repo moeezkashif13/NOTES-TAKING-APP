@@ -8,22 +8,18 @@ import { BsThreeDots,BsPlusCircle } from "react-icons/bs";
 class DOING extends React.Component{
 
     state = {
-        quantity : 7,
+        quantity : 2,
     }
 
     render(){
 
-console.log('wwwww');
-
-        console.log(this.props);
-        
 
     return(
 <div className={`${classes.tasklist__DOING} ${classes.tasklist__conditions}`}>
 
 <div className={` ${classes.tasklist__DoingCondition} ${classes.tasklist__allConditions}`}>
 
-<a href="#!" className={classes.tasklist__task}>Doing</a>
+<a href="#!" style={{backgroundColor:'#fbeecc'}} className={`${classes.tasklist__task} ${classes.tasklist__DOINGTASK}`}>Doing</a>
 
 <span>{this.state.quantity}</span>
 
@@ -37,7 +33,7 @@ console.log('wwwww');
 
 
 
-<NewTask class={classes.tasklist__DOINGLINK}/>
+    <NewTask   class={classes.tasklist__DOINGLINK}/>
 
 
 </div>
@@ -47,13 +43,15 @@ console.log('wwwww');
 
 const mapStateToProps = state=>{
     return{
-ItemDeleted : state.ItemDeleted
+
+        
     }
 }
 
 const mapDispatchToProps = dispatch=>{
     return{
-        // ItemDeleted : arr=>dispatch({type:'ItemDeleted',newArray:arr}),
+
+        
     }
 }
 

@@ -1,3 +1,14 @@
+@mixin transitions($times) {
+    
+    -webkit-transition: all $times ease-out;
+-moz-transition: all $times ease-out;
+-o-transition: all $times ease-out;
+-ms-transition: all $times ease-out;
+transition: all $times ease-out;
+
+}
+
+
 .tasklist{
     /* background-color: red; */
     width: 100%;
@@ -76,11 +87,8 @@
     padding: 10px 10px;
     text-decoration: none;
     color: #ccc;
-    -webkit-transition: all 0.4s ease-out;
--moz-transition: all 0.4s ease-out;
--o-transition: all 0.4s ease-out;
--ms-transition: all 0.4s ease-out;
-transition: all 0.4s ease-out;
+
+    @include transitions(0.4s);
 
 }
 
@@ -135,12 +143,9 @@ border-radius: 5px;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
-// font-size: 2.5rem;
--webkit-transition: all 0.4s ease-out;
--moz-transition: all 0.4s ease-out;
--o-transition: all 0.4s ease-out;
--ms-transition: all 0.4s ease-out;
-transition: all 0.4s ease-out;
+
+    @include transitions(0.4s);
+    
 }
 
 .tasklist__eachTaskThreeDots:hover{
@@ -155,23 +160,33 @@ background-color: rgba(0,0,0,0.8)
 
 
 .tasklist__featuresNewTask{
-    color: purple;
+    color: #ccc;
     text-decoration: none;
 
-    background-color: black;
     width: 100%;
-
-    display: block;
+    background-color: red;
+    display: flex;
+    align-items: center;
 /* border-radius: 5px; */
-font-size: 1.2rem;
-font-weight: 700;
-padding: 8px 0;
-padding-left: 10px;
+font-size:1.5rem;
+font-weight: 400;
+padding: 5px 0;
+padding-left: 0px;
 margin-bottom: 10px;
+
+
+
+@include transitions(0.4s);
+
+
 
 
 }
 
+.tasklist__featuresNewTask:hover{
+    background-color: rgba(85, 81, 81, 0.089);
+    color:  inherit;
+}
 
 .tasklist__allConditions{
     display: flex;
@@ -183,6 +198,8 @@ align-items: center;
 
 
 
+
+
 .tasklist__twoSigns{
     margin-left: auto;
 }
@@ -191,29 +208,29 @@ align-items: center;
     padding: 0px 5px;
     text-decoration: none;
     border-radius: 3px;
-    -webkit-transition: all 0.4s ease-out;
--moz-transition: all 0.4s ease-out;
--o-transition: all 0.4s ease-out;
--ms-transition: all 0.4s ease-out;
-transition: all 0.4s ease-out;
+
+    @include transitions(0.4s);
+color: #000;
 
 }
 
 .tasklist__task:hover{
 
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5) !important;
+    color: black;
 }
+
+
 
 .tasklist__twoSigns a{
     font-size: 2rem;
     text-decoration: none;
     margin-right:5px;
     padding: 0 5px;
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+
+    @include transitions(0.4s);
+
+
 }
 
 
@@ -255,17 +272,15 @@ transition: all 0.4s ease-out;
 .tasklist__dropdown__LITAG a {
     color: #000;
     font-weight: 500;
-    background-color: white;
+
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     justify-content: center;
     padding: 7px 140px 7px 0px;
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+   
+    @include transitions(0.4s);
+    
     text-align: left;
 }
 

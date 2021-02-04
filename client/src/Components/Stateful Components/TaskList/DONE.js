@@ -19,7 +19,7 @@ class DONE extends React.Component{
 
 <div className={` ${classes.tasklist__DoneCondition} ${classes.tasklist__allConditions}`}>
 
-<a href="#!" className={classes.tasklist__task}>Done</a>
+<a href="#!" style={{backgroundColor:'#ffccd1'}} className={`${classes.tasklist__task} ${classes.tasklist__DONETASK}`}>Done</a>
 
 <span>{this.state.quantity}</span>
 

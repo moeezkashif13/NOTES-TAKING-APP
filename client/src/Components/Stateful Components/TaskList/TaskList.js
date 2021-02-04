@@ -14,8 +14,8 @@ class TaskList extends React.Component{
 
     changeInstructions = event=>{
 
-        console.log(event.target);
-
+        
+        
         
 
     }
@@ -93,13 +93,15 @@ class TaskList extends React.Component{
 <div className={classes.tasklist__threeConditionsDIV}>
 
 
-<DO />
+{/* <DO /> */}
 <DOING/>
+
+
 
 {/* kyunn ke kchh classes abhii undeifned hainn iss liye EACH TASK FROM THERE KE PROPS UNDEFIENED DIKHAA SAKTE */}
 
 
-<DONE/>
+{/* <DONE/> */}
 
 
 {/* <EachTaskThreeDots/> */}

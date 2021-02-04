@@ -40,7 +40,7 @@ class DO extends React.Component{
 
     <div className={` ${classes.tasklist__ToDoCondition} ${classes.tasklist__allConditions}`}>
 
-<a href="#!" className={classes.tasklist__task}>TO DO</a>
+<a href="#!" style={{backgroundColor:'#e8d5cc'}} className={`${classes.tasklist__task} ${classes.tasklist__DOTASK}`}>TO DO</a>
 
 <span>{this.state.quantity}</span>
 
@@ -50,7 +50,6 @@ class DO extends React.Component{
 </div>
 
     </div>
-
 
 
 <NewTask class={classes.tasklist__DOLINK}/>
